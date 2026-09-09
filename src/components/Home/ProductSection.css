@@ -1,0 +1,80 @@
+.products-section {
+  padding: 50px 5%;
+  background: #0d0d14;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.section-title h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.section-title button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  color: #b3b3c7;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.section-title button:hover {
+  color: #a855f7;
+}
+
+.section-title button i {
+  font-size: 14px;
+}
+
+.products-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .products-section {
+    padding: 35px 20px;
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  .section-title button {
+    font-size: 13px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
